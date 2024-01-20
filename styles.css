@@ -30,3 +30,24 @@ body {
 a {
     text-decoration: none;
 }
+
+.sidebar-element {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    place-content: center;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto)
+}
+
+form.search-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr repeat(3, auto);
+}
