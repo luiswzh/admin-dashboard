@@ -5,7 +5,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: auto 1fr;
     min-height: 100vh;
 }
 
@@ -22,6 +22,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
+    padding: 10px 40px;
+    box-shadow: rgba(171, 171, 171, 0.5) 0px 5px;
 }
 
 .main-content {
@@ -43,17 +45,22 @@ a {
 
 .header-top {
     display: grid;
-    grid-template-columns: 1fr repeat(3, auto)
+    grid-template-columns: 1fr repeat(3, auto);
+    align-items: center;
+    gap: 20px;
 }
 
 form.search-bar {
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 15px;
 }
 
 .header-bottom {
     display: grid;
     grid-template-columns: auto 1fr repeat(3, auto);
+    align-items: center;
+    gap: 20px;
 }
 
 .main-content .left {
@@ -115,3 +122,45 @@ img {
     height: 50px;
 }
 
+#search-bar {
+    width: 90%;
+    border-radius: 15px;
+    background-color: lightgray;
+    border: none;
+}
+
+.profile-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.profile-2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.username, .message {
+    font-weight: bold;
+}
+
+.message {
+    font-size: small;
+    margin: 0;
+}
+
+.username-info .username {
+    font-size: x-large;
+    margin: 0;
+}
+
+.header-bottom button {
+    height: 35px;
+    width: 90px;
+    color: white;
+    background-color: #0ea5e9;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+}
