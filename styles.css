@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 .grid-container {
     display: grid;
@@ -13,6 +14,8 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr;
+    background-color: #0ea5e9;
+    padding: 15px 20px;
 }
 
 .header {
@@ -34,7 +37,8 @@ a {
 .sidebar-element {
     display: grid;
     grid-template-columns: 35px 1fr;
-    place-content: center;
+    gap: 15px;
+    height: 55px;
 }
 
 .header-top {
@@ -86,3 +90,28 @@ img {
     width: 30px;
     height: 30px;
 }
+
+.sidebar-element img {
+    place-self: center;
+}
+
+.sidebar-element h1 {
+    align-self: center;
+    color: white;
+}
+
+.sidebar-element a {
+    align-self: center;
+    color: white;
+    font-size: large;
+}
+
+.filter-white, .sb-icon{
+    filter: invert(96%) sepia(7%) saturate(3%) hue-rotate(161deg) brightness(107%) contrast(100%);
+}
+
+.sidebar-element.logo img {
+    width: 50px;
+    height: 50px;
+}
+
